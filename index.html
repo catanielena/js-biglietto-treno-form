@@ -12,6 +12,35 @@
         <div class="wrapper">
             <!-- ticket-form -->
             <section class="section ticket-form">
+                <h2>Calcola il prezzo del tuo biglietto</h2>
+                <div class="ticket-form__form">
+                    <div class="form__item">
+                        <label for="nome-cognome">Nome Cognome</label>
+                        <input type="text" name="nome-cognome" id="nome-cognome" placeholder="Nome Cognome">
+                    </div>
+                    <div class="form__item">
+                        <label for="km">Km da percorrere</label>
+                        <input type="number" name="km" id="km" placeholder="--Km">
+                    </div>
+                    <div class="form__item">
+                        <label for="age-range">Fascia d'età</label>
+                        <select name="age-range" id="age-range">
+                            <option value="minorenne">
+                                Minorenne
+                            </option>
+                            <option value="maggiorenne">
+                                Maggiorenne
+                            </option>
+                            <option value="over-65">
+                                Over 65
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ticket-form__btn">
+                    <button class="btn" id="genera">Genera</button>
+                    <button class="btn" id="annulla">Annulla</button>
+                </div>
             </section>
             <!-- /ticket-form -->
             <!-- ticket-data -->
