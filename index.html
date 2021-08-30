@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google-font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- /Google-font -->
         <link rel="stylesheet" href="css/style.css">
         <title>BigliettoTreno/Form</title>
     </head>
@@ -13,7 +18,7 @@
             <!-- ticket-form -->
             <section class="section">
                 <h2>Calcola il prezzo del tuo biglietto</h2>
-                <div class="section__ticket-form section--width">
+                <div class="section__ticket-form section--common">
                     <div class="ticket-form__form">
                         <div class="form__item">
                             <label for="nome-cognome">Nome Cognome</label>
@@ -48,28 +53,28 @@
             <!-- ticket-data -->
             <section class="section" id="ticket-data">
                 <h2>il tuo biglietto</h2>
-                <div class="section__ticket-data section--width">
+                <div class="section__ticket-data section--common">
                     <h3>Dettaglio passeggeri</h3>
                     <ul class="ticket-data__data">
                         <li class="data__item">
                             NOME PASSEGGERO
-                            <div id="passenger"></div>
+                            <div class="data" id="passenger"></div>
                         </li>
-                        <li>
+                        <li class="data__item">
                             Offerta
-                            <div id="offer"></div>
+                            <div class="data" id="offer"></div>
                         </li>
-                        <li>
+                        <li class="data__item">
                             Carrozza
-                            <div id="carriage"></div>
+                            <div class="data" id="carriage"></div>
                         </li>
-                        <li>
+                        <li class="data__item">
                             Codice CP
-                            <div id="cp-code"></div>
+                            <div class="data" id="cp-code"></div>
                         </li>
-                        <li>
+                        <li class="data__item">
                             Costo biglietto
-                            <div id="ticket-cost"></div>
+                            <div class="data" id="ticket-cost"></div>
                         </li>
                     </ul>
                 </div>
