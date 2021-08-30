@@ -12,6 +12,7 @@
 
 ::placeholder, input {
     text-align: center;
+    text-transform: capitalize;
 }
 
 ul {
@@ -23,6 +24,10 @@ ul {
     width: 80%;
     margin: auto;
     border: 1px solid;
+}
+
+#ticket-data.display--block {
+    display: block;
 }
 
 /* typo */
@@ -58,6 +63,14 @@ h2 {
 }
 
 /* ticket-data */
+#ticket-data {
+    display: none;
+}
+
 li {
     padding: 10px;
+}
+
+#ticket-cost::after {
+    content: "\20AC";
 }
