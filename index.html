@@ -11,40 +11,69 @@
 
         <div class="wrapper">
             <!-- ticket-form -->
-            <section class="section ticket-form">
+            <section class="section">
                 <h2>Calcola il prezzo del tuo biglietto</h2>
-                <div class="ticket-form__form">
-                    <div class="form__item">
-                        <label for="nome-cognome">Nome Cognome</label>
-                        <input type="text" name="nome-cognome" id="nome-cognome" placeholder="Nome Cognome">
+                <div class="section__ticket-form section--width">
+                    <div class="ticket-form__form">
+                        <div class="form__item">
+                            <label for="nome-cognome">Nome Cognome</label>
+                            <input type="text" name="nome-cognome" id="nome-cognome" placeholder="Nome Cognome">
+                        </div>
+                        <div class="form__item">
+                            <label for="km">Km da percorrere</label>
+                            <input type="number" name="km" id="km" placeholder="--Km">
+                        </div>
+                        <div class="form__item">
+                            <label for="age-range">Fascia d'età</label>
+                            <select name="age-range" id="age-range">
+                                <option value="minorenne">
+                                    Minorenne
+                                </option>
+                                <option value="maggiorenne">
+                                    Maggiorenne
+                                </option>
+                                <option value="over-65">
+                                    Over 65
+                                </option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form__item">
-                        <label for="km">Km da percorrere</label>
-                        <input type="number" name="km" id="km" placeholder="--Km">
+                    <div class="ticket-form__btn">
+                        <button class="btn" id="genera">Genera</button>
+                        <button class="btn" id="annulla">Annulla</button>
                     </div>
-                    <div class="form__item">
-                        <label for="age-range">Fascia d'età</label>
-                        <select name="age-range" id="age-range">
-                            <option value="minorenne">
-                                Minorenne
-                            </option>
-                            <option value="maggiorenne">
-                                Maggiorenne
-                            </option>
-                            <option value="over-65">
-                                Over 65
-                            </option>
-                        </select>
-                    </div>
-                </div>
-                <div class="ticket-form__btn">
-                    <button class="btn" id="genera">Genera</button>
-                    <button class="btn" id="annulla">Annulla</button>
                 </div>
             </section>
             <!-- /ticket-form -->
             <!-- ticket-data -->
-            <section class="section ticket-data">
+            <section class="section">
+                <h2>il tuo biglietto</h2>
+                <div class="section__ticket-data section--width">
+                    <h3>Dettaglio passeggeri</h3>
+                    <ul class="ticket-data__data">
+                        <li class="data__item">
+                            NOME PASSEGGERO
+                            <div id="passenger"></div>
+                        </li>
+                        <li>
+                            Offerta
+                            <div id="offer"></div>
+                        </li>
+                        <li>
+                            Carrozza
+                            <div id="carriage"></div>
+                        </li>
+                        <li>
+                            Codice CP
+                            <div id="cp-code"></div>
+                        </li>
+                        <li>
+                            Costo biglietto
+                            <div id="ticket-cost"></div>
+                        </li>
+                    </ul>
+                </div>
+
             </section>
             <!-- /ticket-data -->
         </div>

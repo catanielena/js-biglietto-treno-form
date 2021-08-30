@@ -14,10 +14,21 @@
     text-align: center;
 }
 
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.section--width {
+    width: 80%;
+    margin: auto;
+    border: 1px solid;
+}
 
 /* typo */
 h2 {
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* button */
@@ -44,4 +55,9 @@ h2 {
 
 #km::after {
     content: "km";
+}
+
+/* ticket-data */
+li {
+    padding: 10px;
 }
