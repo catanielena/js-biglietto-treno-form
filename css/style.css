@@ -132,11 +132,11 @@ label {
 
 .data {
     text-transform: capitalize;
-    margin-top: 50px;
 }
 
 .data:not(#passenger) {
     font-weight: 400;
+    margin-top: 50px;
 }
 
 #ticket-cost::after {
